@@ -1,26 +1,64 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #fdfdfd;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#head {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2d3748;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.imgWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profilePic {
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profilePic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.profile-text h1 {
+  font-size: 20;
+  font-weight: bold;
+  color: #0d2b62;
+}
+.profile-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1261c9;
+}
+.profile-text h3 {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(15, 139, 248);
+}
+.profile-text p {
+  font-size: 16px;
 }
