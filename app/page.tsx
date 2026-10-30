@@ -1,18 +1,19 @@
-import Profile from "@/components/Profile";
-import ProfilePic from "@/components/ProfilePic";
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <div>
-      <Profile />
-      <ProfilePic />
-      <div className="profile-text">
-        <h1>Hello, I'm</h1>
-        <h2>Satyam Kumar Trivedi</h2>
-        <h3>Aspiring Software Developer</h3>
-        <p>
-          I am a BCA graduate passionate about web development and building
-          interactive applications using JavaScript.
-        </p>
+    <div className="home">
+      <h1 id="heading">Home </h1>
+      <div className="navBar">
+        <a style={{ backgroundColor: "aqua" }} href="/about">
+          About me
+        </a>
+        <a href="/login">Login</a>
+
+        <Link href="/about" >
+        About
+        </Link>
+        <Link href="/products">Products</Link>
       </div>
     </div>
   );

@@ -1,10 +1,41 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
+/* Home page */
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fdfdfd;
   box-sizing: border-box;
+  background-color: #94a3b8;
+  display: flow-root;
+}
+#heading {
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+.navBar {
+  height: 60px;
+  background-color: #415050;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navBar a {
+  color: #f2f3f3;
+  text-decoration: none;
+}
+
+/* About page */
+.about {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-color: #939dac;
 }
 .header {
   display: flex;
@@ -61,4 +92,50 @@ body {
 }
 .profile-text p {
   font-size: 16px;
+}
+
+/* Login Page */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+}
+.form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 13px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px 0px #00000020;
+}
+.form h1 {
+  text-align: center;
+}
+.form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #94a3b8;
+  outline: none;
+}
+.form button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+.form button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
 }
