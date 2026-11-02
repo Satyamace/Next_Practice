@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Card from "@/components/Card"
 
 export default function Home() {
   return (
@@ -15,6 +16,10 @@ export default function Home() {
         </Link>
         <Link href="/products">Products</Link>
       </div>
+        <Card name = "iphone" price = {1000}/>
+        <Card name = "samsung" price = {5000}/>
+        <Card name = "nokia" price = {8000}/>
+        <Card name = ""/>
     </div>
   );
 }
